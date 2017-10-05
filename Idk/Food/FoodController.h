@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FoodController.h
 //  Idk
 //
 //  Created by Sam La on 10/4/17.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface FoodController : UIViewController
 
 @end
-
-

@@ -13,6 +13,9 @@
 		22A001B91F85BDBA005A9751 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A001B81F85BDBA005A9751 /* Assets.xcassets */; };
 		22A001BC1F85BDBA005A9751 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A001BA1F85BDBA005A9751 /* LaunchScreen.storyboard */; };
 		22A001BF1F85BDBA005A9751 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A001BE1F85BDBA005A9751 /* main.m */; };
+		22A001D51F85D210005A9751 /* FoodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A001D41F85D210005A9751 /* FoodController.m */; };
+		22A0043D1F85DAB8005A9751 /* fork-knife.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A0043C1F85DAB8005A9751 /* fork-knife.png */; };
+		22A0043F1F85DB28005A9751 /* wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A0043E1F85DB28005A9751 /* wallet.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,10 @@
 		22A001BB1F85BDBA005A9751 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22A001BD1F85BDBA005A9751 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		22A001BE1F85BDBA005A9751 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22A001D31F85D210005A9751 /* FoodController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FoodController.h; sourceTree = "<group>"; };
+		22A001D41F85D210005A9751 /* FoodController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodController.m; sourceTree = "<group>"; };
+		22A0043C1F85DAB8005A9751 /* fork-knife.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fork-knife.png"; path = "../../../../../../../Downloads/iconbeast-lite-300/iconbeast lite 300 - png/fork-knife.png"; sourceTree = "<group>"; };
+		22A0043E1F85DB28005A9751 /* wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wallet.png; path = "../../../../../../../Downloads/iconbeast-lite-300/iconbeast lite 300 - png/wallet.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +65,8 @@
 		22A001AE1F85BDBA005A9751 /* Idk */ = {
 			isa = PBXGroup;
 			children = (
+				22A001D71F85D65B005A9751 /* Resources */,
+				22A001C51F85CDD3005A9751 /* Food */,
 				22A001AF1F85BDBA005A9751 /* AppDelegate.h */,
 				22A001B01F85BDBA005A9751 /* AppDelegate.m */,
 				22A001B21F85BDBA005A9751 /* ViewController.h */,
@@ -69,6 +78,32 @@
 				22A001BE1F85BDBA005A9751 /* main.m */,
 			);
 			path = Idk;
+			sourceTree = "<group>";
+		};
+		22A001C51F85CDD3005A9751 /* Food */ = {
+			isa = PBXGroup;
+			children = (
+				22A001D31F85D210005A9751 /* FoodController.h */,
+				22A001D41F85D210005A9751 /* FoodController.m */,
+			);
+			path = Food;
+			sourceTree = "<group>";
+		};
+		22A001D71F85D65B005A9751 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				22A0043B1F85DAA3005A9751 /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		22A0043B1F85DAA3005A9751 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				22A0043E1F85DB28005A9751 /* wallet.png */,
+				22A0043C1F85DAB8005A9751 /* fork-knife.png */,
+			);
+			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +165,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				22A001BC1F85BDBA005A9751 /* LaunchScreen.storyboard in Resources */,
+				22A0043D1F85DAB8005A9751 /* fork-knife.png in Resources */,
 				22A001B91F85BDBA005A9751 /* Assets.xcassets in Resources */,
+				22A0043F1F85DB28005A9751 /* wallet.png in Resources */,
 				22A001B71F85BDBA005A9751 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +182,7 @@
 				22A001B41F85BDBA005A9751 /* ViewController.m in Sources */,
 				22A001BF1F85BDBA005A9751 /* main.m in Sources */,
 				22A001B11F85BDBA005A9751 /* AppDelegate.m in Sources */,
+				22A001D51F85D210005A9751 /* FoodController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,12 +316,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5UCGDU89YN;
 				INFOPLIST_FILE = Idk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.idk.Idk;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.idk.Idk-mobile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -292,12 +332,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5UCGDU89YN;
 				INFOPLIST_FILE = Idk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.idk.Idk;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.idk.Idk-mobile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

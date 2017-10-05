@@ -9,21 +9,19 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *TodoButton;
+@property (weak, nonatomic) IBOutlet UIButton *ActivitiesButton;
+@property (weak, nonatomic) IBOutlet UIButton *FoodButton;
 
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+  [super viewDidLoad];
+    _FoodButton.layer.cornerRadius = 5;
+    _ActivitiesButton.layer.cornerRadius = 5;
+    _TodoButton.layer.cornerRadius = 5;
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end

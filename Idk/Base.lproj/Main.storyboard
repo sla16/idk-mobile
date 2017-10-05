@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cMp-Xh-gvT">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,153 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="top" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmV-zm-eQV">
+                                <rect key="frame" x="147" y="318" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="AYm-0R-UVk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Food">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cam-l9-Gs8">
+                                <rect key="frame" x="42" y="318" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Activities">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DNR-p0-Xja">
+                                <rect key="frame" x="252" y="318" width="80" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="mjY-4m-v8N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="TODO">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Idk." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TUz-UM-3RM">
+                                <rect key="frame" x="124" y="121" width="127" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DNR-p0-Xja" firstAttribute="leading" secondItem="GmV-zm-eQV" secondAttribute="trailing" constant="25" id="6Zz-3K-MEx"/>
+                            <constraint firstItem="GmV-zm-eQV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="303" id="IeE-lg-eEB"/>
+                            <constraint firstItem="GmV-zm-eQV" firstAttribute="baseline" secondItem="cam-l9-Gs8" secondAttribute="baseline" id="NDC-1U-Usa"/>
+                            <constraint firstItem="GmV-zm-eQV" firstAttribute="leading" secondItem="cam-l9-Gs8" secondAttribute="trailing" constant="30" id="Tfe-ia-lp1"/>
+                            <constraint firstItem="GmV-zm-eQV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TrS-6S-Ccl"/>
+                            <constraint firstItem="GmV-zm-eQV" firstAttribute="baseline" secondItem="DNR-p0-Xja" secondAttribute="baseline" id="sjq-Cs-d4K"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="ActivitiesButton" destination="cam-l9-Gs8" id="1so-hk-VPh"/>
+                        <outlet property="FoodButton" destination="GmV-zm-eQV" id="CS2-wN-hOG"/>
+                        <outlet property="TodoButton" destination="DNR-p0-Xja" id="KMP-oE-HEn"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1404" y="681"/>
+        </scene>
+        <!--Activities-->
+        <scene sceneID="AS7-aJ-yK0">
+            <objects>
+                <viewController id="Goa-os-B21" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lIC-nl-swL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7g3-8L-Dan">
+                                <rect key="frame" x="90" y="122" width="195" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7g3-8L-Dan" firstAttribute="centerX" secondItem="lIC-nl-swL" secondAttribute="centerX" id="1My-sA-GNZ"/>
+                            <constraint firstItem="i2U-jH-bn1" firstAttribute="bottom" secondItem="7g3-8L-Dan" secondAttribute="bottom" constant="436" id="iYC-wb-nKR"/>
+                            <constraint firstItem="7g3-8L-Dan" firstAttribute="top" secondItem="i2U-jH-bn1" secondAttribute="top" constant="102" id="jOm-Mh-Qhv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="i2U-jH-bn1"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Activities" image="wallet.png" id="Zo0-v6-O1P"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QSO-0m-N07" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-498" y="763"/>
+        </scene>
+        <!--Food-->
+        <scene sceneID="6lq-9H-Y9o">
+            <objects>
+                <viewController id="FGy-76-mZ1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nw3-zp-W7V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cex-qC-SXX">
+                                <rect key="frame" x="124" y="122" width="127" height="60"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cex-qC-SXX" firstAttribute="top" secondItem="Y0m-aA-mXh" secondAttribute="top" constant="102" id="4AA-fx-zv3"/>
+                            <constraint firstItem="Y0m-aA-mXh" firstAttribute="bottom" secondItem="Cex-qC-SXX" secondAttribute="bottom" constant="436" id="IGV-ZL-KQc"/>
+                            <constraint firstItem="Cex-qC-SXX" firstAttribute="centerX" secondItem="nw3-zp-W7V" secondAttribute="centerX" id="fVm-qy-amV"/>
+                            <constraint firstItem="Cex-qC-SXX" firstAttribute="leading" secondItem="Y0m-aA-mXh" secondAttribute="leading" constant="124" id="gGP-Sm-PVi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Y0m-aA-mXh"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Food" image="fork-knife.png" id="5iX-Za-h3v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sqt-7k-5Yl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="321" y="-86"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="cRZ-Zk-Lhi">
+            <objects>
+                <tabBarController id="cMp-Xh-gvT" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TKs-Hl-eQD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="FGy-76-mZ1" kind="relationship" relationship="viewControllers" id="LM5-zk-Uhx"/>
+                        <segue destination="Goa-os-B21" kind="relationship" relationship="viewControllers" id="FyS-Pv-d3q"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vsz-hT-M99" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-497" y="-53"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fork-knife.png" width="30" height="30"/>
+        <image name="wallet.png" width="30" height="30"/>
+    </resources>
 </document>
