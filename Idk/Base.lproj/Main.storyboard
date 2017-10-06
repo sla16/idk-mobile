@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cMp-Xh-gvT">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -14,7 +15,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="top" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GmV-zm-eQV">
@@ -84,11 +85,11 @@
             <objects>
                 <viewController id="Goa-os-B21" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lIC-nl-swL">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7g3-8L-Dan">
-                                <rect key="frame" x="90" y="122" width="195" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Activities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7g3-8L-Dan">
+                                <rect key="frame" x="90" y="20" width="195" height="60"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -111,13 +112,38 @@
         <!--Food-->
         <scene sceneID="6lq-9H-Y9o">
             <objects>
-                <viewController id="FGy-76-mZ1" sceneMemberID="viewController">
+                <viewController id="FGy-76-mZ1" customClass="FoodController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nw3-zp-W7V">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cex-qC-SXX">
-                                <rect key="frame" x="124" y="122" width="127" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zr7-BH-Roq">
+                                <rect key="frame" x="170" y="639" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Pick!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pick" destination="FGy-76-mZ1" eventType="touchUpInside" id="1KS-xc-lhZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d7y-ki-dBu">
+                                <rect key="frame" x="20" y="378" width="374" height="240"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="i0j-JK-kRq">
+                                <rect key="frame" x="20" y="108" width="374" height="262"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Food" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cex-qC-SXX">
+                                <rect key="frame" x="124" y="0.0" width="166" height="129"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="129" id="o6j-gp-Ncx"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="45"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -125,18 +151,22 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Cex-qC-SXX" firstAttribute="top" secondItem="Y0m-aA-mXh" secondAttribute="top" constant="102" id="4AA-fx-zv3"/>
-                            <constraint firstItem="Y0m-aA-mXh" firstAttribute="bottom" secondItem="Cex-qC-SXX" secondAttribute="bottom" constant="436" id="IGV-ZL-KQc"/>
-                            <constraint firstItem="Cex-qC-SXX" firstAttribute="centerX" secondItem="nw3-zp-W7V" secondAttribute="centerX" id="fVm-qy-amV"/>
-                            <constraint firstItem="Cex-qC-SXX" firstAttribute="leading" secondItem="Y0m-aA-mXh" secondAttribute="leading" constant="124" id="gGP-Sm-PVi"/>
+                            <constraint firstItem="Cex-qC-SXX" firstAttribute="centerX" secondItem="nw3-zp-W7V" secondAttribute="centerX" id="czo-1t-smw"/>
+                            <constraint firstItem="Cex-qC-SXX" firstAttribute="leading" secondItem="Y0m-aA-mXh" secondAttribute="leading" constant="124" id="kZK-3l-gB4"/>
+                            <constraint firstItem="Cex-qC-SXX" firstAttribute="top" secondItem="nw3-zp-W7V" secondAttribute="topMargin" constant="-37" id="yq2-60-JYf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Y0m-aA-mXh"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Food" image="fork-knife.png" id="5iX-Za-h3v"/>
+                    <connections>
+                        <outlet property="ImageArea" destination="i0j-JK-kRq" id="riV-DH-dqd"/>
+                        <outlet property="InformationArea" destination="d7y-ki-dBu" id="zCf-Cd-ShR"/>
+                        <outlet property="PickButton" destination="zr7-BH-Roq" id="Agc-zB-c8j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sqt-7k-5Yl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="321" y="-86"/>
+            <point key="canvasLocation" x="320.28985507246381" y="-86.413043478260875"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="cRZ-Zk-Lhi">

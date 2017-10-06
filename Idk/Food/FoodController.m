@@ -9,23 +9,31 @@
 #import "FoodController.h"
 
 @interface FoodController ()
+@property (weak, nonatomic) IBOutlet UIImageView *ImageArea;
+@property (weak, nonatomic) IBOutlet UILabel *InformationArea;
+@property (weak, nonatomic) IBOutlet UIButton *PickButton;
 
 @end
 
 @implementation FoodController
 
+static bool picked = false;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _PickButton.layer.cornerRadius = 5;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)pick {
+    if (picked) {
+        _ImageArea.image = nil;
+        _InformationArea.text = @"";
+    } else {
+        _ImageArea.image = [UIImage imageNamed: @"cutie.PNG"];
+        _InformationArea.text = @"TODO: Pick random spot to eat";
+    }
+    
+    picked = !picked;
 }
-*/
 
 @end

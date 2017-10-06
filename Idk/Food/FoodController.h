@@ -10,4 +10,6 @@
 
 @interface FoodController : UIViewController
 
+- (IBAction)pick;
+
 @end

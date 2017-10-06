@@ -16,6 +16,7 @@
 		22A001D51F85D210005A9751 /* FoodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A001D41F85D210005A9751 /* FoodController.m */; };
 		22A0043D1F85DAB8005A9751 /* fork-knife.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A0043C1F85DAB8005A9751 /* fork-knife.png */; };
 		22A0043F1F85DB28005A9751 /* wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = 22A0043E1F85DB28005A9751 /* wallet.png */; };
+		22A004431F871F2E005A9751 /* cutie.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 22A004421F871F2E005A9751 /* cutie.PNG */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		22A001D41F85D210005A9751 /* FoodController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodController.m; sourceTree = "<group>"; };
 		22A0043C1F85DAB8005A9751 /* fork-knife.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "fork-knife.png"; path = "../../../../../../../Downloads/iconbeast-lite-300/iconbeast lite 300 - png/fork-knife.png"; sourceTree = "<group>"; };
 		22A0043E1F85DB28005A9751 /* wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wallet.png; path = "../../../../../../../Downloads/iconbeast-lite-300/iconbeast lite 300 - png/wallet.png"; sourceTree = "<group>"; };
+		22A004421F871F2E005A9751 /* cutie.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cutie.PNG; path = ../../../../../../cutie.PNG; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 		22A0043B1F85DAA3005A9751 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				22A004421F871F2E005A9751 /* cutie.PNG */,
 				22A0043E1F85DB28005A9751 /* wallet.png */,
 				22A0043C1F85DAB8005A9751 /* fork-knife.png */,
 			);
@@ -164,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22A004431F871F2E005A9751 /* cutie.PNG in Resources */,
 				22A001BC1F85BDBA005A9751 /* LaunchScreen.storyboard in Resources */,
 				22A0043D1F85DAB8005A9751 /* fork-knife.png in Resources */,
 				22A001B91F85BDBA005A9751 /* Assets.xcassets in Resources */,
